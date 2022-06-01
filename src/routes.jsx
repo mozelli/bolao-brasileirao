@@ -10,11 +10,9 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={ <Splash /> } />
-        
         <Route path="home" element={ <MainLayout /> }>
-          <Route index element={ <Home /> } />  
+          <Route index element={ <Home /> } />
         </Route>
-      
       </Routes>
     </BrowserRouter>
   );

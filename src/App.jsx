@@ -1,11 +1,12 @@
-import Splash from './pages/Splash';
+import Router from './routes';
+
 import './app.scss';
 
 function App() {
 
   return (
     <div className="App">
-      <Splash />
+      <Router />
     </div>
   )
 }
