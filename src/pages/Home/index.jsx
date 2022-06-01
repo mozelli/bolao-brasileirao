@@ -11,7 +11,7 @@ const Home = () => {
       <h3>Escolha a partida</h3>
 
       <h4>Amanhã - 02/06</h4>
-      <div className={ styles.partidas }>
+      <div className={ styles.matches }>
         <ul>
           <a href="/">
             <li>
@@ -21,7 +21,7 @@ const Home = () => {
         </ul>
       </div>
       <h4>Sexta - 03/06</h4>
-      <div className={ styles.partidas }>
+      <div className={ styles.matches }>
         <ul>
           <a href="/">
             <li>
