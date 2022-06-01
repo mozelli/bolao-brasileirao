@@ -1,0 +1,60 @@
+/* --------------------------------------------------------------
+
+   reset.css
+   * Resets default browser CSS.
+
+-------------------------------------------------------------- */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table,
+th,
+td {
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  border: 1px solid #ededed;
+  padding: 1.2rem 1rem;
+  font-size: 1.8rem;
+  outline: none;
+  border-radius: 0.4rem;
+  text-align: left;
+  background-color: #ededed;
+  margin: 1.6rem 0;
+}
+
+button {
+  border: 0;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  color: #2c2c2c;
+}
