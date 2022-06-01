@@ -1,0 +1,54 @@
+.confirmation {
+  margin: 1.6rem 0;
+  padding-inline: 1.6rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    margin: 1.6rem 0;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .info {
+    border: 1px solid #dddddd;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+
+    p {
+      margin: 1.2rem 0;
+    }
+  }
+
+  .acceptTermsAndConfirm {
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+
+    input[type="checkbox"] {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    label {
+      padding-left: 1.2rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  .terms {
+    margin-top: 1.6rem;
+  }
+
+  button {
+    margin-top: 1.6rem;
+    background-color: green;
+    color: white;
+    letter-spacing: 0.3rem;
+  }
+}
