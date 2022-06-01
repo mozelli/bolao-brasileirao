@@ -1,10 +1,12 @@
+import Match from '../../components/Match';
+
 import styles from './home.module.scss';
-import cru from '../../images/teams/cruzeiro.png';
-import crb from '../../images/teams/crb.png';
-import vas from '../../images/teams/vasco.png';
-import gre from '../../images/teams/gremio.png';
 
 const Home = () => {
+  const matches = [
+    {id: 1, host: "Vasco", visitor: "Grêmio"},
+    {id: 2, host: "CRB", visitor: "Cruzeiro"}
+  ]
   return (
     <div className={ styles.home }>
       <h2>Campeonato Brasileiro <br />Série B</h2>
@@ -12,23 +14,13 @@ const Home = () => {
 
       <h4>Amanhã - 02/06</h4>
       <div className={ styles.matches }>
-        <ul>
-          <a href="/">
-            <li>
-              <img src={ vas } alt="Vasco" /> Vasco x Grêmio <img src={ gre } alt="Grêmio" />
-            </li>
-          </a>
-        </ul>
-      </div>
-      <h4>Sexta - 03/06</h4>
-      <div className={ styles.matches }>
-        <ul>
-          <a href="/">
-            <li>
-              <img src={ crb } alt="CRB" /> CRB x Cruzeiro <img src={ cru } alt="Cruzeiro" />
-            </li>
-          </a>
-        </ul>
+        {
+          matches.map((match, index) => {
+            return (
+              <Match key={index} host={ match.host } visitor={ match.visitor } id={ match.id }  />    
+            )
+          })
+        }
       </div>
     </div>
   );
