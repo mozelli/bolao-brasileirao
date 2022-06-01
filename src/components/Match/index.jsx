@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { cleanTeamImageName } from '../../libs/sanitizer';
 import styles from './match.module.scss';
 
@@ -8,7 +10,7 @@ const Team = (props) => {
   return (
     <div className={ styles.team }>
       <ul>
-        <a href={`/${props.id}`}>
+        <Link to={`/bet/${props.id}`}>
           <li>
             <img 
               src={ `/src/images/teams/${hostImageNameSanitized}.png` } 
@@ -17,7 +19,7 @@ const Team = (props) => {
             { props.host } x { props.visitor } 
             <img src={ `/src/images/teams/${visitorImageNameSanitized}.png` } alt={ props.visitor } />
           </li>
-        </a>
+        </Link>
       </ul>
     </div>
   );
